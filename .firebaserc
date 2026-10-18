@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "exam-render-dev",
+    "dev": "exam-render-dev"
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "note": "Design examples only: ISO strings represent Firestore Timestamp; contentHash placeholders must be computed; uid and system times are illustrative.",
+  "documents": [
+    {
+      "path": "exams/examprepper_36",
+      "data": {
+        "schemaVersion": 1,
+        "title": "AWS DevOps Engineer Professional",
+        "titleSort": "aws devops engineer professional",
+        "provider": "Amazon",
+        "status": "published",
+        "questionCount": 208,
+        "source": {
+          "key": "examprepper",
+          "examId": "36",
+          "url": "https://www.examprepper.co/exam/36/1",
+          "declaredQuestionCount": 208,
+          "lastUpdatedRaw": "06 Aug 2025",
+          "capturedAt": "2026-10-11T07:54:27.047Z",
+          "flags": {
+            "isBeta": false,
+            "isMCOnly": false,
+            "isImplemented": true
+          }
+        },
+        "contentHash": "<computed-sha256>",
+        "createdAt": "2026-10-18T00:00:00.000Z",
+        "updatedAt": "2026-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "path": "exams/examprepper_36/questions/qxQ7x9dzXjDPaL2y3vCx",
+      "data": {
+        "schemaVersion": 1,
+        "position": 1,
+        "topic": "1",
+        "status": "published",
+        "preview": "A company wants to migrate its content sharing web application hosted on Amazon EC2 to a serverless architecture. The company currently deploys changes to its application by creati",
+        "stem": [
+          {
+            "type": "text",
+            "text": "A company wants to migrate its content sharing web application hosted on Amazon EC2 to a serverless architecture. The company currently deploys changes to its application by creating a new Auto Scaling group of EC2 instances and a new Elastic Load Balancer, and then shifting the traffic away using an Amazon Route\n53 weighted routing policy.\nFor its new serverless application, the company is planning to use Amazon API Gateway and AWS Lambda. The company will need to update its deployment processes to work with the new application. It will also need to retain the ability to test new features on a small number of users before rolling the features out to the entire user base.\nWhich deployment strategy will meet these requirements?"
+          }
+        ],
+        "choices": [
+          {
+            "label": "A",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Use AWS CDK to deploy API Gateway and Lambda functions. When code needs to be changed, update the AWS CloudFormation stack and deploy the new version of the APIs and Lambda functions. Use a Route 53 failover routing policy for the canary release strategy."
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Use AWS CloudFormation to deploy API Gateway and Lambda functions using Lambda function versions. When code needs to be changed, update the CloudFormation stack with the new Lambda code and update the API versions using a canary release strategy. Promote the new version when testing is complete."
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Use AWS Elastic Beanstalk to deploy API Gateway and Lambda functions. When code needs to be changed, deploy a new version of the API and Lambda functions. Shift traffic gradually using an Elastic Beanstalk blue/green deployment."
+              }
+            ]
+          },
+          {
+            "label": "D",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Use AWS OpsWorks to deploy API Gateway in the service layer and Lambda functions in a custom layer. When code needs to be changed, use OpsWorks to perform a blue/green deployment and shift traffic gradually."
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "raw": "B",
+          "labels": [
+            "B"
+          ],
+          "examTopicsRaw": "B",
+          "verified": false
+        },
+        "explanation": {
+          "kind": "missing",
+          "blocks": []
+        },
+        "community": {
+          "raw": [
+            "B (100%)"
+          ],
+          "parsed": [
+            {
+              "labels": [
+                "B"
+              ],
+              "percent": 100
+            }
+          ],
+          "unparsed": []
+        },
+        "quality": {
+          "flags": [],
+          "duplicateTextHash": null
+        },
+        "commentCount": 41,
+        "source": {
+          "questionId": "qxQ7x9dzXjDPaL2y3vCx",
+          "url": "https://www.examtopics.com/discussions/amazon/view/48835-exam-aws-devops-engineer-professional-topic-1-question-1/",
+          "timestampRaw": "2021-04-02 18:59:00",
+          "unixTimestamp": 1617382740,
+          "isMCRaw": true,
+          "capturedAt": "2026-10-11T07:54:27.047Z"
+        },
+        "contentHash": "<computed-sha256>",
+        "createdAt": "2026-10-18T00:00:00.000Z",
+        "updatedAt": "2026-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "path": "exams/examprepper_36/questions/JyVk4zUSuKbeif702PIp",
+      "data": {
+        "schemaVersion": 1,
+        "position": 94,
+        "topic": "1",
+        "status": "published",
+        "preview": "A DevOps engineer has created an AWS CloudFormation template. The template includes the following snippet:\n\n \n\n\nWhen the template is launched, CloudFormation performs a rollback an",
+        "stem": [
+          {
+            "type": "text",
+            "text": "A DevOps engineer has created an AWS CloudFormation template. The template includes the following snippet:"
+          },
+          {
+            "type": "image",
+            "url": "https://img.examtopics.com/aws-devops-engineer-professional/image6.png",
+            "sourceUrl": "https://img.examtopics.com/aws-devops-engineer-professional/image6.png",
+            "alt": "Ảnh trong câu hỏi 94"
+          },
+          {
+            "type": "text",
+            "text": "When the template is launched, CloudFormation performs a rollback and reports the following error message: Received 0 SUCCESS signal(s) cut of 1.\n\nWhich combination of steps should the DevOps engineer take to resolve this error? (Choose two.)"
+          }
+        ],
+        "choices": [
+          {
+            "label": "A",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Update the UserData attribute to use the cfn-signal helper script."
+              }
+            ]
+          },
+          {
+            "label": "B",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Update the AutoScalingGroup resource with a DependsOn LaunchConfig."
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Update the LaunchConfig resource type to AWS::EC2::LaunchTemplate."
+              }
+            ]
+          },
+          {
+            "label": "D",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Increase the CreationPolicy ResourceSignal Timeout."
+              }
+            ]
+          },
+          {
+            "label": "E",
+            "blocks": [
+              {
+                "type": "text",
+                "text": "Remove the CreationPolicy attribute. Create new WaitHandle and WaitCondition resources."
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "raw": "AD",
+          "labels": [
+            "A",
+            "D"
+          ],
+          "examTopicsRaw": "AD",
+          "verified": false
+        },
+        "explanation": {
+          "kind": "missing",
+          "blocks": []
+        },
+        "community": {
+          "raw": [
+            "AD (100%)"
+          ],
+          "parsed": [
+            {
+              "labels": [
+                "A",
+                "D"
+              ],
+              "percent": 100
+            }
+          ],
+          "unparsed": []
+        },
+        "quality": {
+          "flags": [],
+          "duplicateTextHash": null
+        },
+        "commentCount": 4,
+        "source": {
+          "questionId": "JyVk4zUSuKbeif702PIp",
+          "url": "https://www.examtopics.com/discussions/amazon/view/100640-exam-aws-devops-engineer-professional-topic-1-question-183/",
+          "timestampRaw": "2023-02-24 10:44:00",
+          "unixTimestamp": 1677231840,
+          "isMCRaw": true,
+          "capturedAt": "2026-10-11T07:54:27.047Z"
+        },
+        "contentHash": "<computed-sha256>",
+        "createdAt": "2026-10-18T00:00:00.000Z",
+        "updatedAt": "2026-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "path": "exams/examprepper_36/questions/qxQ7x9dzXjDPaL2y3vCx/comments/330985",
+      "data": {
+        "schemaVersion": 1,
+        "parentId": null,
+        "author": "devopp",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "B\nnoting SAM is built over CloudFormation."
+          }
+        ],
+        "upvotes": 12,
+        "sourceTimestampRaw": "1634620020.0",
+        "sourceCreatedAt": "2021-10-19T05:07:00.000Z",
+        "contentHash": "<computed-sha256>",
+        "createdAt": "2026-10-18T00:00:00.000Z",
+        "updatedAt": "2026-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "path": "users/example-user",
+      "data": {
+        "schemaVersion": 1,
+        "createdAt": "2026-10-18T00:00:00.000Z",
+        "updatedAt": "2026-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "path": "users/example-user/bookmarks/examprepper_36__qxQ7x9dzXjDPaL2y3vCx",
+      "data": {
+        "schemaVersion": 1,
+        "examId": "examprepper_36",
+        "questionId": "qxQ7x9dzXjDPaL2y3vCx",
+        "createdAt": "2026-10-18T00:00:00.000Z"
+      }
+    },
+    {
+      "path": "users/example-user/readingProgress/examprepper_36",
+      "data": {
+        "schemaVersion": 1,
+        "questionId": "qxQ7x9dzXjDPaL2y3vCx",
+        "positionSnapshot": 1,
+        "updatedAt": "2026-10-18T00:00:00.000Z"
+      }
+    }
+  ]
+}

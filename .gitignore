@@ -1,0 +1,33 @@
+node_modules/
+dist/
+/data/
+*.cookies.json
+*.storage.json
+.tools/
+firebase-debug*.log
+.firebase/
+
+# Local editor / operating system files
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Credentials and local environment overrides
+.env
+.env.*
+!.env.example
+*service-account*.json
+*serviceAccount*.json
+*-firebase-adminsdk-*.json
+*.pem
+*.p12
+*.mobileprovision
+
+# Local generated reports containing crawl content
+docs/data-audit.json
+
+# Production values are supplied separately; keep the configuration template
+app/config/prod.*.json
+!app/config/prod.example.json

@@ -1,0 +1,17 @@
+{
+  "indexes": [
+    {"collectionGroup":"exams","queryScope":"COLLECTION","fields":[{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"titleSort","order":"ASCENDING"}]},
+    {"collectionGroup":"questions","queryScope":"COLLECTION","fields":[{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"position","order":"ASCENDING"}]},
+    {"collectionGroup":"questions","queryScope":"COLLECTION","fields":[{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"position","order":"DESCENDING"}]}
+  ],
+  "fieldOverrides": [
+    {"collectionGroup":"exams","fieldPath":"*","indexes":[]},
+    {"collectionGroup":"questions","fieldPath":"*","indexes":[]},
+    {"collectionGroup":"comments","fieldPath":"*","indexes":[]},
+    {"collectionGroup":"users","fieldPath":"*","indexes":[]},
+    {"collectionGroup":"bookmarks","fieldPath":"*","indexes":[]},
+    {"collectionGroup":"bookmarks","fieldPath":"createdAt","indexes":[{"order":"DESCENDING","queryScope":"COLLECTION"}]},
+    {"collectionGroup":"readingProgress","fieldPath":"*","indexes":[]},
+    {"collectionGroup":"readingProgress","fieldPath":"updatedAt","indexes":[{"order":"DESCENDING","queryScope":"COLLECTION"}]}
+  ]
+}

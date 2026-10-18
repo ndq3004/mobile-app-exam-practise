@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Exam Render dev (web)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "chrome",
+      "args": ["--dart-define-from-file=config/dev.web.json"]
+    },
+    {
+      "name": "Exam Render dev (iOS)",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--dart-define-from-file=config/dev.ios.json"]
+    }
+  ]
+}

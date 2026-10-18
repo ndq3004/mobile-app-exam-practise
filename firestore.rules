@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Closed baseline until the access policy is implemented and tested in task 7.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

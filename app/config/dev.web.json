@@ -1,0 +1,9 @@
+{
+  "APP_ENV": "dev",
+  "FIREBASE_PROJECT_ID": "exam-render-dev",
+  "FIREBASE_API_KEY": "AIzaSyBFSSqtnTsKnjs4RQvvumd3XkY_FEP4euk",
+  "FIREBASE_APP_ID": "1:441951466034:web:7e1c8ace587acee513422b",
+  "FIREBASE_MESSAGING_SENDER_ID": "441951466034",
+  "FIREBASE_AUTH_DOMAIN": "exam-render-dev.firebaseapp.com",
+  "FIREBASE_IOS_BUNDLE_ID": ""
+}
